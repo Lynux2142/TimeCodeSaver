@@ -1,7 +1,7 @@
 browser.tabs.onUpdated.addListener((tabsId, changeInfo, tab) => {
 	browser.tabs.query({active: true, currentWindow: true}, tabs => {
 		const url = new URL(tabs[0].url);
-		browser.tabs.sendMessage(tabs[0].id, url.host);
+		browser.tabs.sendMessage(tabs[0].id, url.host, () => {browser.runtime.lastError});
 	});
 });
 
