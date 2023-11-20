@@ -1,7 +1,7 @@
 {
 	"name": "Time Code Saver",
 	"description": "Save current YouTube/Twitch video time code in URL",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"permissions": ["tabs"],
 	"content_scripts": [
 		{
