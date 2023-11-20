@@ -41,7 +41,7 @@ const host = {
 		button: buttonYT
 	},
 	'www.twitch.tv': {
-		name: '.Layout-sc-nxg1ff-0.djAXJb',
+		name: 'div.player-controls__right-control-group',
 		button: buttonTTV
 	}
 };
