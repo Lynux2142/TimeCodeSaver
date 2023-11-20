@@ -1,7 +1,7 @@
-let buttonYT = document.createElement("a");
+let buttonYT = document.createElement("button");
 
-buttonYT.innerHTML = "<svg height=\"90%\" width=\"90%\" viewBox=\"-8 -8 36 36\"><g><path fill=\"none\" d=\"M0 0h24v24H0z\"/><path class=\"ytp-svg-fill\" d=\"M4 3h14l2.707 2.707a1 1 0 0 1 .293.707V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm3 1v5h9V4H7zm-1 8v7h12v-7H6zm7-7h2v3h-2V5z\"/></g></svg>"
-buttonYT.classList = "ytp-play-button ytp-button";
+buttonYT.innerHTML = "<svg height=\"100%\" width=\"100%\" viewBox=\"-6 -6 36 36\"><path class=\"ytp-svg-fill\" d=\"M4 3h14l2.707 2.707a1 1 0 0 1 .293.707V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm3 1v5h9V4H7zm-1 8v7h12v-7H6zm7-7h2v3h-2V5z\"/></svg>"
+buttonYT.classList = "ytp-button";
 buttonYT.addEventListener("click", () => {
 	let time = document.querySelector(".ytp-time-current").innerHTML;
 	time = time.split(':').reverse();
@@ -20,8 +20,8 @@ buttonYT.addEventListener("click", () => {
 });
 
 let buttonTTV = document.createElement("button");
-buttonTTV.classList = "ScCoreButton-sc-1qn4ixc-0 ScCoreButtonSecondary-sc-1qn4ixc-2 ffyxRu kgzEiA";
-buttonTTV.style.cssText = "margin:10px;padding:10px";
+buttonTTV.classList = "ScCoreButton-sc-ocjdkq-0 caieTg ScButtonIcon-sc-9yap0r-0 dOOPAe";
+buttonTTV.innerHTML = "<svg class=\"ScIconSVG-sc-1q25cff-1 jpczqG\" height=\"100%\" width=\"100%\" viewBox=\"-6 -6 36 36\"><path d=\"M4 3h14l2.707 2.707a1 1 0 0 1 .293.707V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm3 1v5h9V4H7zm-1 8v7h12v-7H6zm7-7h2v3h-2V5z\"/></svg>";
 buttonTTV.innerHTML = "Save";
 buttonTTV.addEventListener("click", () => {
 	let time = document.querySelector('[data-a-target="player-seekbar-current-time"]').innerHTML;
